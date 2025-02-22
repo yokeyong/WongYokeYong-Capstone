@@ -1,0 +1,56 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 2.0;
+  font-weight: 400;
+
+  background-color: white;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.StockList h3 {
+  display: flex;
+  font-size: 1.5em;
+  text-align: left;
+}
+
+.StockList p {
+  display: flex;
+  gap: 1em;
+  text-align: left;
+}
+
+.FinanceForm h3 {
+  display: flex;
+  font-size: 1.5em;
+  text-align: left;
+}
+
+.FinanceForm form {
+  display: flex;
+  gap: 1em;
+  max-width: 15em;
+}
+
+form button {
+  border: 2px solid;
+  padding: 1em 2em;
+  font-size: 0.8em;
+  font-weight: 500;
+  font-family: inherit;
+  color: white;
+  background-color: blue;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  text-align: left;
+}
