@@ -1,0 +1,3 @@
+# Exclude node modules from being uploaded to the repo in the cloud
+
+node_modules/
