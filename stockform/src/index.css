@@ -1,13 +1,13 @@
 :root {
-
   display: flex;
   justify-content: center;
   align-items: center;
   max-width: 1280px;
   line-height: 2.0;
   font-weight: 400;
+  height: 100vh;
 
-  background-color: grey;
+  background-color: white;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -19,7 +19,37 @@
   text-align: left;
 }
 
-.StockList p {
+.StockList .subList {
+  gap: 1em;
+  text-align: left;
+  list-style-type: none;
+}
+
+.StockList .subList .Symbol {
+  display: flex;
+  gap: 1em;
+  text-align: left;
+}
+
+.StockList .subList .Quantity {
+  display: flex;
+  gap: 1em;
+  text-align: left;
+}
+
+.StockList .subList .PurchasePrice {
+  display: flex;
+  gap: 1em;
+  text-align: left;
+}
+
+.StockList .subList .ProfitLoss {
+  display: flex;
+  gap: 1em;
+  text-align: left;
+}
+
+.StockList .noStocks {
   display: flex;
   gap: 1em;
   text-align: left;
@@ -33,20 +63,19 @@
 
 .FinanceForm form {
   display: flex;
-  gap: 1em;
+  gap: 2em;
   max-width: 15em;
 }
 
 form button {
-  border: 2px solid;
-  padding: 1em 2em;
+  padding: 1em 1em;
+  border: px solid;
   font-size: 0.8em;
   font-weight: 500;
   font-family: inherit;
   color: white;
-  background-color: blue;
+  background-color: #007bff;
   cursor: pointer;
   transition: border-color 0.25s;
-  text-align: left;
   border-radius: 10px;
 }
