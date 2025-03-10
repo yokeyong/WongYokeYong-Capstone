@@ -5,6 +5,11 @@ function FinanceForm() {
 
     const yestDate = new Date();
     yestDate.setDate(yestDate.getDate() - 1);
+    if (yestDate.getDay() === 0) { // If yesterday is Sunday
+        yestDate.setDate(yestDate.getDate() - 2); // Set to Friday
+    } else {
+        yestDate.setDate(yestDate.getDate() - 1);
+    }
     const formattedYestDate = yestDate.toISOString().split('T')[0];
     
     const [apiResponse, setApiResponse] = useState({})
