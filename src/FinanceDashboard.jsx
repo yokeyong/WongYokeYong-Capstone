@@ -15,7 +15,8 @@ function FinanceForm() {
             const {symbol, quantity, priceInput} = formData;
             // 1st account 88XJ721RN2667TQT
             // 2nd account C7LJKZ5EGOBJ9HF9
-            fetch(`https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${symbol}&apikey=88XJ721RN2667TQT`)
+            // 3rd account DGMAL1QHDD5RXMS5
+            fetch(`https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${symbol}&apikey=DGMAL1QHDD5RXMS5`)
                 .then((response) => response.status === 200 ? response.json() : console.log("Error"))
                 .then((data) => {
                     setApiResponse({
